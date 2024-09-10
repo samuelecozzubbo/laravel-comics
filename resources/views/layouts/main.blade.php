@@ -1,3 +1,6 @@
+@php
+    $main_menu = config('menues.main_menu');
+@endphp
 <!DOCTYPE html>
 <html lang="en">
 
