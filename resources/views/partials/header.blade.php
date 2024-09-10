@@ -7,7 +7,8 @@
         <!-- Navigazione -->
         <nav>
             <ul>
-                <li><a href="#" class="">CHARACTERS</a></li>
+                <li><a href="{{ route('home') }}" class="">HOME</a></li>
+                <li><a href="{{ route('character') }}" class="">CHARACTERS</a></li>
                 <li><a href="#" class="active">COMICS</a></li>
                 <li><a href="#" class="">MOVIES</a></li>
                 <li><a href="#" class="">TV</a></li>
