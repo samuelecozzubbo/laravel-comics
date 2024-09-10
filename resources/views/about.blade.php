@@ -1,4 +1,8 @@
 {{-- questa view estende il file main.blade.php che è dentro la cartella view/layouts --}}
+@php
+    $members = config('team.team_members');
+@endphp
+
 @extends('layouts.main')
 
 @section('content')
@@ -6,10 +10,9 @@
 
     </div>
     <main>
-
         <div class="jumbotron">
             <h1>Il nostro fantastico team</h1>
-            <p>
+            <p class="jumbo-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto suscipit deserunt assumenda a officia
                 quibusdam, soluta quo neque unde illum. A ut veritatis voluptatibus delectus aliquid cumque quia. Cum nulla
                 beatae iure nisi exercitationem accusamus, illo minus corporis deserunt ad. Omnis voluptates distinctio
@@ -32,6 +35,18 @@
                 error sunt labore, quo corporis repellat molestiae iure. Quam nihil aut harum, rem voluptatibus sapiente
                 eaque delectus labore corporis inventore dolore ea laborum adipisci et fugit unde soluta iste earum nam sit?
             </p>
+            <div class="team-container">
+                @foreach ($members as $member)
+                    <div class="team-card">
+                        <img src="{{ $member['image'] }}" alt="{{ $member['name'] }}" class="team-card-img">
+                        <div class="team-card-body">
+                            <h5 class="team-card-title">{{ $member['name'] }}</h5>
+                            <h6 class="team-card-role">{{ $member['role'] }}</h6>
+                            <p class="team-card-bio">{{ $member['bio'] }}</p>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
         </div>
     </main>
 @endsection
