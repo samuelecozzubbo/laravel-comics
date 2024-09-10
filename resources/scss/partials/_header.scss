@@ -13,7 +13,7 @@ header{
         a{
             text-decoration: none;
             color: #55595C;
-            &:hover {
+            &:hover,&.active {
                     color: #0282F9;
                 }
         }

@@ -18,6 +18,4 @@
 @endsection
 
 
-@section('titlePage')
-    character
-@endsection
+@section('titlePage', 'character')

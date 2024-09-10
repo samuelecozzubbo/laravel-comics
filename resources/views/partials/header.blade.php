@@ -7,9 +7,15 @@
         <!-- Navigazione -->
         <nav>
             <ul>
-                <li><a href="{{ route('home') }}" class="">HOME</a></li>
-                <li><a href="{{ route('character') }}" class="">CHARACTERS</a></li>
-                <li><a href="#" class="active">COMICS</a></li>
+                <li>
+                    <a href="{{ route('home') }}"
+                        class="{{ Route::currentRouteName() === 'home' ? 'active' : '' }}">HOME</a>
+                </li>
+                <li>
+                    <a href="{{ route('character') }}"
+                        class="{{ Route::currentRouteName() === 'character' ? 'active' : '' }}">CHARACTERS</a>
+                </li>
+                <li><a href="#" class="">COMICS</a></li>
                 <li><a href="#" class="">MOVIES</a></li>
                 <li><a href="#" class="">TV</a></li>
                 <li><a href="#" class="">GAMES</a></li>
