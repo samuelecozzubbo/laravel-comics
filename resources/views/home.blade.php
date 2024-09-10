@@ -4,8 +4,12 @@
 
 @section('content')
     <main>
-        <h1>HOME PAGE</h1>
-        <p>Benvenuti nella più piccola raccolta di fumetti fatta con Laravel</p>
+
+        <div class="jumbotron">
+            <h1>HOME PAGE</h1>
+            <p>Benvenuti nella più piccola raccolta di fumetti fatta con Laravel</p>
+            <div class="current-series">Current Series</div>
+        </div>
     </main>
 @endsection
 
