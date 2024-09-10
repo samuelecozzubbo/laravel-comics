@@ -3,7 +3,10 @@
 
 
 @section('content')
-    <h1>HOME</h1>
+    <main>
+        <h1>HOME PAGE</h1>
+        <p>Benvenuti nella più piccola raccolta di fumetti fatta con Laravel</p>
+    </main>
 @endsection
 
 
