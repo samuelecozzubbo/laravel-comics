@@ -1,0 +1,25 @@
+header{
+    background-color: white;
+    padding: 10px 0;
+
+    .container,ul{
+        @include center(space-between);
+    }
+
+    ul{
+        gap: 12px;
+        list-style: none;
+
+        a{
+            text-decoration: none;
+            color: #55595C;
+            &:hover {
+                    color: #0282F9;
+                }
+        }
+    }
+}
+
+
+
+
