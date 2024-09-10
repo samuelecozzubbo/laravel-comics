@@ -18,4 +18,4 @@
 @endsection
 
 
-@section('titlePage', 'character')
+@section('titlePage', 'comics')

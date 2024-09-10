@@ -12,17 +12,17 @@
                         class="{{ Route::currentRouteName() === 'home' ? 'active' : '' }}">HOME</a>
                 </li>
                 <li>
-                    <a href="{{ route('character') }}"
-                        class="{{ Route::currentRouteName() === 'character' ? 'active' : '' }}">CHARACTERS</a>
+                    <a href="{{ route('comics') }}"
+                        class="{{ Route::currentRouteName() === 'comics' ? 'active' : '' }}">COMICS</a>
                 </li>
-                <li><a href="#" class="">COMICS</a></li>
+                <li><a href="#" class="">CHARACTER</a></li>
                 <li><a href="#" class="">MOVIES</a></li>
                 <li><a href="#" class="">TV</a></li>
                 <li><a href="#" class="">GAMES</a></li>
                 <li><a href="#" class="">COLLECTIBLES</a></li>
                 <li><a href="#" class="">VIDEOS</a></li>
-                <li><a href="#" class="">FANS</a></li>
-                <li><a href="#" class="">NEWS</a></li>
+                <li><a href="#" class="">CONTACTS</a></li>
+                <li><a href="#" class="">ABOUT US</a></li>
                 <li><a href="#" class="">SHOP</a></li>
 
             </ul>
